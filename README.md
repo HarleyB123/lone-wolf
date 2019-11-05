@@ -25,21 +25,22 @@ For python, run ezw_app.py
 
 For Docker  
 
-$docker build -t <foldername> .
+$docker build -t <name> .
  
-$docker run -d --name sunriseSunet -p 8081:5000 <foldername>
+$docker run -d --name sunrisesunset -p 8081:5000 <name>
 
 <a name="features"></a>
 ## Features
 * Allows any location in the world
 * Simple MVC with single page web display
-* Fully commented code
+
 
 To-do list: 
 * Document the process of changing the code to fit the sunrise-sunset API on LinkedIn.
 * Move to an ECS container on AWS and add a domain.
 * Put the above into Terraform.
 * Look into implimenting CI/CD with Jenkins for changes, have it deploy Terraform.
+* Fully commented code
 
 <a name="status"></a>
 ## Status
