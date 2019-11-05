@@ -25,9 +25,9 @@ For python, run ezw_app.py
 
 For Docker  
 
-$docker build -t <name> .
+$docker build -t sunrisesunset .
  
-$docker run -d --name sunrisesunset -p 8081:5000 <name>
+$docker run -d --name sunrisesunset -p 8081:5000 sunrisesunset
 
 <a name="features"></a>
 ## Features
