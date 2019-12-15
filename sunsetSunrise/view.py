@@ -11,7 +11,7 @@ def index():
 
 @app.route('/report', methods=['POST', 'GET'])
 def ezw():
-    if request.method == 'POST': 
+    if request.method == 'POST':
        data = request.json
        location = data['location']
 
@@ -21,14 +21,14 @@ def ezw():
        if geoLocation == None:
            searchArea = "Unknown location"
            reportTemplate = render_template('reports.html', area=searchArea)
-           return reportTemplate 
-       
-       searchArea = geoLocation.address       
+           return reportTemplate
+
+       searchArea = geoLocation.address
        sunriseReports = sunriseController.getSunriseReport(data, geoLocation)
 
        reportTemplate = render_template('reports.html', area=searchArea, reports=sunriseReports)
 
-    return reportTemplate  
+    return reportTemplate
 
 if __name__ == '__main__':
-    app.run(debug=False,host='0.0.0.0')   
+    app.run(debug=False,host='0.0.0.0')
