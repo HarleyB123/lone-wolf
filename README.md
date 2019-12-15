@@ -44,7 +44,7 @@ $ docker build -t sunrisesunset .
 $ docker run -d --name sunrisesunset -p 8081:5000 sunrisesunset
 ```
 
-a<a name="features"></a>
+<a name="features"></a>
 ## Features
 * Allows any location in the world
 * Simple MVC with single page web display
