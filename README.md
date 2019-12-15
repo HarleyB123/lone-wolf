@@ -25,7 +25,7 @@ See [here](http://sunrise.harleybates.co.uk/) for demo
 
 For python:
 
-'''
+```
 cd sunsetSunrise
 
 pipenv install Pipfile
@@ -33,16 +33,16 @@ pipenv install Pipfile
 pipenv run python3 view.py
 
 python3 view.py
-'''
+```
  
 
 For Docker  
 
-'''
+```
 $ docker build -t sunrisesunset .
  
 $ docker run -d --name sunrisesunset -p 8081:5000 sunrisesunset
-'''
+```
 
 a<a name="features"></a>
 ## Features
