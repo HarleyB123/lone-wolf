@@ -12,7 +12,7 @@ jobs:
         uses: aws-actions/amazon-ecs-deploy-task-definition@v1.0.1
         with:
         # The path to the ECS task definition file to register
-          task-definition: .github/workflows/task-def.json
+          task-definition: /home/runner/work/SunsetSunriseMVC/.github/workflows/task-def.json
           # The name of the ECS service to deploy to. The action will only register the task definition if no service is given.
           service: sunsetService    
           # The name of the ECS service's cluster.  Will default to the 'default' cluster
@@ -20,7 +20,7 @@ jobs:
           # Whether to wait for the ECS service to reach stable state after deploying the new task definition. Valid value is "true". Will default to not waiting.
           wait-for-service-stability: "true"
           # The path to the AWS CodeDeploy AppSpec file, if the ECS service uses the CODE_DEPLOY deployment controller. Will default to 'appspec.yaml'.
-          codedeploy-appspec: .github/workflows/appspec.yml
+          codedeploy-appspec: /home/runner/work/SunsetSunriseMVC/.github/workflows/appspec.yml
           # The name of the AWS CodeDeploy application, if the ECS service uses the CODE_DEPLOY deployment controller. Will default to 'AppECS-{cluster}-{service}'.
           codedeploy-application: AppECS-sunsetCluster-sunsetService
           # The name of the AWS CodeDeploy deployment group, if the ECS service uses the CODE_DEPLOY deployment controller. Will default to 'DgpECS-{cluster}-{service}'.
