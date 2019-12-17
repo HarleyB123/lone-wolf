@@ -80,3 +80,6 @@ jobs:
         service: sunsetService
         cluster: sunsetCluster
         wait-for-service-stability: true
+        codedeploy-appspec: .github/workflows/appspec.json
+        codedeploy-application: AppECS-sunsetCluster-sunsetService
+        codedeploy-deployment-group: DgpECS-sunsetCluster-sunsetService
