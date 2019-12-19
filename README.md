@@ -46,16 +46,14 @@ $ docker run -d --name sunrisesunset -p 8081:5000 sunrisesunset
 
 <a name="features"></a>
 ## Features
-* Allows any location in the world
-* Simple MVC with single page web display
-* Pipeline to update task definition in AWS.
-
+* Allows any location in the world.
+* Simple MVC with single page web display.
+* Uses AWS CodeDeploy tutorial found [here](https://aws.amazon.com/blogs/devops/use-aws-codedeploy-to-implement-blue-green-deployments-for-aws-fargate-and-amazon-ecs/) to implement blue-green deployment on ECS.
+* Github Actions Pipeline to do this ^
 
 To-do list: 
-* Document the process of changing the code to fit the sunrise-sunset API on LinkedIn.
-* Move to an ECS container on AWS and add a domain.
 * Put the above into Terraform.
-* Fully commented code
+* Fully commented code.
 
 <a name="status"></a>
 ## Status
