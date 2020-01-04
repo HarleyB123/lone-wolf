@@ -13,8 +13,6 @@ This is a simple MVC built with Python and Flask. Currently In Progress.
 
 Based on the code-a-star blog [here](http://www.codeastar.com/flask-easy-web-app-python), I have decided to change it up so that it uses a sunset-sunrise API. This is a simple single page flask application built with Python that allows the user to enter a date and a location with the output producing the time the sun will rise and set on that particular day at the specified location. 
 
-See [here](http://sunrise.harleybates.co.uk/) for demo
-
 <a name="technologies"></a>
 ## Technologies
 
@@ -48,11 +46,10 @@ $ docker run -d --name sunrisesunset -p 8081:5000 sunrisesunset
 ## Features
 * Allows any location in the world.
 * Simple MVC with single page web display.
-* Uses AWS CodeDeploy tutorial found [here](https://aws.amazon.com/blogs/devops/use-aws-codedeploy-to-implement-blue-green-deployments-for-aws-fargate-and-amazon-ecs/) to implement blue-green deployment on ECS.
-* Github Actions Pipeline to do this ^
+
 
 To-do list: 
-* Put the above into Terraform.
+* Found a cool AWS CodeDeploy tutorial [here](https://aws.amazon.com/blogs/devops/use-aws-codedeploy-to-implement-blue-green-deployments-for-aws-fargate-and-amazon-ecs/) to implement blue-green deployment on ECS. Put this into Terraform.
 * Fully commented code.
 
 <a name="status"></a>
