@@ -1,4 +1,4 @@
-# Sunset-Sunrise MVC
+# Sunset Sunrise MVC
 This is a simple MVC built with Python and Flask. Currently In Progress.
 
 ## Table of contents
