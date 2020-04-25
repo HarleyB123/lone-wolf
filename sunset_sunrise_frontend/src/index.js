@@ -1,4 +1,3 @@
-/* global google */
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
@@ -7,7 +6,6 @@ import "react-datepicker/dist/react-datepicker.css";
 import Geosuggest from 'react-geosuggest';
 import axios from 'axios';
 import moment from 'moment';
-import WeatherIcon from 'react-icons-weather';
 
 class Ezw extends React.Component {
     constructor(props) {
