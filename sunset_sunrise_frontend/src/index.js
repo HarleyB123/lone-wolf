@@ -12,16 +12,21 @@ class Ezw extends React.Component {
           startDate: new Date(),
         };
         this.handleChangeStart = this.handleChangeStart.bind(this);
-        this.handleChangeEnd = this.handleChangeEnd.bind(this);
     }
 
     handleChangeStart(date)
     {
-    }//handleChangeStart
+        if (date > this.state.endDate)
+        {
+            this.setState({
+                endDate: date
+            });
+        }
 
-    handleChangeEnd(date)
-    {
-    }//handleChangeEnd
+        this.setState({
+          startDate: date
+        });
+    }//handleChangeStart
 
     render()
     {
@@ -29,7 +34,7 @@ class Ezw extends React.Component {
         <div>
         <h1>EZ Weather Forecast React Frontend</h1>
             <div className="comp_ezw">
-                <div>Date range:</div>
+                <div>Date :</div>
                 <DatePicker
                 selected={this.state.startDate}
                 selectsStart
