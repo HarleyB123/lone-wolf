@@ -7,38 +7,44 @@ import Geosuggest from 'react-geosuggest';
 import axios from 'axios';
 import moment from 'moment';
 
-function cardLayout(props)
+function cardLayout(props, i)
 {
     return (
+        <div key={i}>
            <div className="weather_card">
               <div className="weather_info">
-                <div><div className="report_item">Date:</div> {props.date}</div>
-                <div><div className="report_item">Sunrise - UTC Time:</div> {props.sunrise}</div>
-                <div><div className="report_item">Sunset - UTC Time:</div> {props.sunset}</div>
+                <div><div className="report_item">Date:</div> {props}</div>
+                <div><div className="report_item">Sunrise:</div> {props.sunrise}</div>
+                <div><div className="report_item">Sunset:</div> {props.sunset}</div>
               </div>
            </div>
+        </div>
       );
 }//cardLayout
 
 function Weathercard(props, location)
 {
-    let sunrise_report = props.reports;
+    let sunrise_report = props.report;
     let json_report = [];
+    let report_length = 0;
 
 
     if (typeof sunrise_report !== 'undefined')
     {
         json_report=JSON.parse(sunrise_report);
+        report_length = json_report.length;
     }//if not undefined
 
     var rows = [];
-    rows.push( cardLayout(json_report));
+    for (var i = 0; i < report_length; i++) {
+        rows.push( cardLayout(json_report[i], i));
+    }
 
     return (
       <div>
           <div className="location">{location}</div>
           <div>
-            {rows}
+            {json_report}
           </div>
       </div>
     );
