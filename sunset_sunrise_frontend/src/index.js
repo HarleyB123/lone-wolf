@@ -6,6 +6,7 @@ import "react-datepicker/dist/react-datepicker.css";
 import Geosuggest from 'react-geosuggest';
 import axios from 'axios';
 import moment from 'moment';
+import './index.css';
 
 function cardLayout(props)
 {
