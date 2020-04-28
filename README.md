@@ -16,7 +16,8 @@ Based on the code-a-star blog [here](http://www.codeastar.com/flask-easy-web-app
 <a name="technologies"></a>
 ## Technologies
 
-* See Pipfile
+* Python, see requirements.txt
+* React
 
 <a name="setup"></a>
 ## Setup
