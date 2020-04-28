@@ -26,7 +26,7 @@ For python:
 ```
 cd sunsetSunrise
 
-pipenv install Pipfile
+pip install -r requirements.txt
 
 pipenv run python3 view.py
 
