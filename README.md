@@ -1,5 +1,5 @@
 # Sunset Sunrise MVC
-This is a simple MVC built with Python and Flask. Currently In Progress.
+This is a simple MVC built with Python and Flask. Also a Frontend/Backend structure using React and Flask.
 
 ## Table of contents
 * [General info](#general-info)
@@ -17,7 +17,7 @@ Based on the code-a-star blog [here](http://www.codeastar.com/flask-easy-web-app
 ## Technologies
 
 * Python, see requirements.txt
-* React
+* React, see package.json
 
 <a name="setup"></a>
 ## Setup
@@ -43,6 +43,8 @@ $ docker build -t sunrisesunset .
 $ docker run -d --name sunrisesunset -p 8081:5000 sunrisesunset
 ```
 
+Other Docker build and run instructions are in the Backend and Frontend README.md
+
 <a name="features"></a>
 ## Features
 * Allows any location in the world.
@@ -50,8 +52,9 @@ $ docker run -d --name sunrisesunset -p 8081:5000 sunrisesunset
 
 
 To-do list: 
-* Found a cool AWS CodeDeploy tutorial [here](https://aws.amazon.com/blogs/devops/use-aws-codedeploy-to-implement-blue-green-deployments-for-aws-fargate-and-amazon-ecs/) to implement blue-green deployment on ECS. Put this into Terraform.
+* Found a cool AWS CodeDeploy tutorial [here](https://aws.amazon.com/blogs/devops/use-aws-codedeploy-to-implement-blue-green-deployments-for-aws-fargate-and-amazon-ecs/) to implement blue-green deployment on ECS. Put this into Terraform and deploy for the fully Flask SunriseSunsetMVC.
 * Fully commented code.
+* For the React Frontend/Flask Backend duo, get it in EKS (overkill, but I want to learn K8's :) )
 
 <a name="status"></a>
 ## Status
