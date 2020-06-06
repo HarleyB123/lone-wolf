@@ -38,5 +38,5 @@ spec:
         - name: REACT_APP_GOOGLE_API_KEY 
           valueFrom:
             secretKeyRef:
-              name: GOOGLE_API_KEY
+              name: google-api-key
               key: key
