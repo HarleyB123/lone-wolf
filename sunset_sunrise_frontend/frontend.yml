@@ -34,3 +34,9 @@ spec:
       - name: frontend
         image: "sunrisesunsetfrontendk8s"
         imagePullPolicy: Never
+        env:
+        - name: REACT_APP_GOOGLE_API_KEY 
+          valueFrom:
+            secretKeyRef:
+              name: GOOGLE_API_KEY
+              key: key
