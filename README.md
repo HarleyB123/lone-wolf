@@ -54,8 +54,9 @@ Other Docker build and run instructions are in the Backend and Frontend README.m
 To-do list: 
 * Found a cool AWS CodeDeploy tutorial [here](https://aws.amazon.com/blogs/devops/use-aws-codedeploy-to-implement-blue-green-deployments-for-aws-fargate-and-amazon-ecs/) to implement blue-green deployment on ECS. Put this into Terraform and deploy for the fully Flask SunriseSunsetMVC.
 * Fully commented code.
-* For the React Frontend/Flask Backend duo, get it in EKS (overkill, but I want to learn K8's 😅 )
+* For the React Frontend/Flask Backend duo, get it in EKS (overkill, but I want to learn K8's 😅 ) - Currently CORS issue, read Kubernetes Up and Running!
 * Structure the whole repo better
+* Style whole MVC with tailwind css
 
 <a name="status"></a>
 ## Status
