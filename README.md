@@ -18,6 +18,7 @@ Based on the code-a-star blog [here](http://www.codeastar.com/flask-easy-web-app
 
 * Python, see requirements.txt
 * React, see package.json
+* Tailwind CSS
 
 <a name="setup"></a>
 ## Setup
