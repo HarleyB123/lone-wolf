@@ -36,4 +36,3 @@ spec:
   - protocol: TCP
     port: 80
     targetPort: http
-  type: NodePort
