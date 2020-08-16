@@ -32,7 +32,7 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: "sunrisesunsetfrontendk8s"
+        image: "sunrisesunsetfrontendk8"
         imagePullPolicy: Never
         env:
         - name: REACT_APP_GOOGLE_API_KEY 
