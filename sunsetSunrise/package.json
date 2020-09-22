@@ -11,7 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "autoprefixer": "^9.8.6",
-    "postcss-cli": "^7.1.1",
+    "postcss-cli": "^7.1.2",
     "tailwindcss": "^1.7.3"
   }
 }
